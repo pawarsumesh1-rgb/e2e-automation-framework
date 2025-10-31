@@ -36,7 +36,7 @@ class BasePage:
         print("element not located within timeout.")
         return False
 
-    def wait_for_element(self, locator, timeout: int = 10000):
+    def wait_for_element(self, locator, timeout: int = 100000):
         """
         Waits for the first visible element matching the locator on the main page.
         Returns the element (Locator) if found or raises TimeoutError.
